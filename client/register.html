@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Event registration</h1>
+    <form id="registration-form">
+        <div>
+            <label>Full Name</label>
+            <input type="text" id="fullName" placeholder="Full Name" required>
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div>
+            <label>Date of Birth</label>
+            <input type="date" id="dateOfBirth" required>
+        </div>
+        <div>
+            <label>Where did you hear about this event?</label>
+            <div>
+                <input type="radio" id="source1" name="source" value="Social media">
+                <label for="source1">Social media</label>
+            </div>
+            <div>
+                <input type="radio" id="source2" name="source" value="Friends">
+                <label for="source2">Friends</label>
+            </div>
+            <div>
+                <input type="radio" id="source3" name="source" value="Found myself">
+                <label for="source3">Found myself</label>
+            </div>
+        </div>
+        <input type="hidden" id="eventId">
+        <button type="submit">Register</button>
+    </form>
+    <script src="events.js"></script>
+</body>
+</html>
